@@ -1,0 +1,25 @@
+{
+  "name": "gulp-tepml",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "HomeDAN"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "magnific-popup": "^1.1.0",
+    "lightbox2": "lightbox#^2.10.0"
+  },
+  "devDependencies": {
+    "slide-and-swipe-menu": "*"
+  }
+}

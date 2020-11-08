@@ -1,0 +1,19 @@
+@mixin media($size)
+  @media (min-width: $size)
+    @content
+
+@mixin resolution($size)
+  @media (min-resolution: $size)
+    @content
+
+
+
+@mixin pseudo($w, $h)
+  content: ''
+  display: block
+  position: absolute
+  width: $w
+  height: $h
+
+@function px-to-rem($size, $basicSize: 16px)
+  @return $size / $basicSize#{rem}

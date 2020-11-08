@@ -1,0 +1,63 @@
+/*============ REFERENCES =============*/
+
+/**  1.Main                           **/
+/**	 2.Promo                          **/
+/**	 3.Header styles                  **/
+/**	 4.Menu styles                    **/
+/**	 5.Index projects styles          **/
+/**  6.Index footer styles            **/
+/**  7.Cookie styles                  **/
+/**  8.Page Contacts styles           **/
+/**  9.Instagram Section styles       **/
+/**  10.Main footer styles            **/
+/**  11.Interiors styles              **/
+/**    ^- 11.1Interiors Grid Styles   **/
+/**  12.Object-Single styles          **/
+/**  13.About Styles                  **/
+/**  14.Team Styles                   **/
+/**  15.Team Single Styles            **/
+/**  16.News Grid Styles              **/
+/**  17.News List Styles              **/
+/**  18.News Single Styles            **/
+
+
+
+@import 'mixins'
+
+/** Colors **/
+
+$white: #FFFFFF
+
+/** Fonts **/
+
+@font-face
+  font-family: 'SFProDisplay'
+  src: url('../fonts/SFProDisplay.ttf')
+  font-weight: normal
+  font-style: normal
+
+$f_SFProDisplay: 'SFProDisplay', 'Arial', sans-serif
+
+.container
+  @include media(1440px)
+    margin: 0 auto
+    width: 100%
+    max-width: 900px
+  @include media(1920px)
+    margin: 0 auto
+    width: 100%
+    max-width: 1200px
+
+.header
+  padding: 30px 0
+  width: 100%
+  background: url(../img/bck.svg) center no-repeat
+  &__logo
+    display: flex
+    justify-content: center
+  &__title
+    text-align: center
+    color: $white
+  &__subtitle
+    text-align: center
+    color: $white

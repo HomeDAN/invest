@@ -1,0 +1,576 @@
+<style>
+
+.form__table {
+  overflow-x: auto;
+}
+
+.form__table td {
+    padding: 7px 12px;
+    outline: 1px solid #ccc;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.form__container {
+ max-width: 320px;
+ overflow-x: auto;
+
+}
+
+</style>
+
+
+<div class="container">
+<div class="form__container">
+<form>
+<table class="form__table">
+  <tbody>
+    <tr>
+      <td>Тип</td>
+      <td>1К</td>
+      <td>1К+</td>
+      <td>2К</td>
+      <td>2К+</td>
+      <td>3К</td>
+      <td>3К+</td>
+    </tr>
+    <tr>
+    <td>Осталось квартир</td>
+      <td>24</td>
+      <td>21</td>
+      <td>24</td>
+      <td>12</td>
+      <td>24</td>
+      <td>15</td>
+    </tr>
+    <tr>
+    <td>Принято заявок</td>
+      <td>5</td>
+      <td>15</td>
+      <td>5</td>
+      <td>7</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+<style>
+
+.form__table td{
+  padding: 7px 24px;
+  outline: 1px solid #ccc;
+}
+</style>
+
+
+<table class="form__table">
+  <tbody>
+    <tr>
+      <td>1К</td>
+      <td>1К+</td>
+      <td>2К</td>
+      <td>2К+</td>
+      <td>3К</td>
+      <td>3К+</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+      </td>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+      </td>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+      </td>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+      </td>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+      </td>
+      <td>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+<select class="custom-select custom-select-lg mb-3">
+  <option value="14" selected>14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+</select>
+<table class="form__table">
+  <tbody>
+    <tr>
+      <td>СОБСТВЕННЫЕ СРЕДСТВА (100%)</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Ипотека</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>ПОСЛЕ ПРОДАЖИ ИМЕЮЩЕЙСЯ НЕДВИЖИМОСТИ </td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>ПОСЛЕ ЗАКРЫТИЯ ДЕПОЗИТА</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>ИНОЕ</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+<div class="container">
+  <input class="range" type="range" min="4.56" max="10" value="4.56" step="0.01" onmousemove="rangevalue1.value=value" />
+  <output id="rangevalue1"></output>
+  <div class="line__number">
+     <p>7</p>
+  </div>
+</div>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationServer01">First name</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer02">Email</label>
+      <input type="email" class="form-control is-valid" id="validationServer02" placeholder="Email" required>
+    </div>
+    <div class="col-md-4 mb-3">
+  <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+  <div class="col-10">
+    <input class="form-control is-valid" type="tel" value="1-(555)-555-5555" id="example-tel-input" required>
+  </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+</div>
+</div>
+
+<h2 class="container text-box"> <article class="row">
+<p>
+ <i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Добрый день !<br>
+	 Спасибо за потраченное время !</i>
+</p>
+<p>
+ <span style="color: #ff0000;">Обращаем&nbsp; Ваше внимание, что дом № 8 - завершающий </span><span style="color: #ff0000;">дом&nbsp;в ЖК Планетарий.&nbsp;</span><br>
+ <br>
+	 Заполните и отправьте Ваше предложение на покупку квартиры. Оно&nbsp;будет рассмотрено на Совете директоров !
+</p>
+<p>
+</p>
+<p>
+	 На сегодняшний день в продаже:
+</p>
+<table border="1" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+	<td>
+		<p>
+			 &nbsp; &nbsp; Тип&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; 1К&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp;&nbsp;1К+&nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; 2К&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; 2К+
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; 3К&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; 3К+&nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp; &nbsp;Осталось квартир&nbsp; &nbsp;&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">24&nbsp; &nbsp; </span>
+		</p>
+ <span style="color: #0000ff;"> </span>
+	</td>
+	<td>
+ <span style="color: #0000ff;"> </span>
+		<p>
+ <span style="color: #0000ff;">
+			&nbsp; &nbsp;&nbsp; 21&nbsp; &nbsp; </span>
+		</p>
+ <span style="color: #0000ff;"> </span>
+	</td>
+	<td>
+ <span style="color: #0000ff;"> </span>
+		<p>
+ <span style="color: #0000ff;">
+			&nbsp; &nbsp; &nbsp;24&nbsp; &nbsp;&nbsp; </span>
+		</p>
+ <span style="color: #0000ff;"> </span>
+	</td>
+	<td>
+ <span style="color: #0000ff;"> </span>
+		<p>
+ <span style="color: #0000ff;">
+			&nbsp; &nbsp; &nbsp;12&nbsp; &nbsp;&nbsp;</span>
+		</p>
+ <span style="color: #0000ff;"> </span>
+	</td>
+	<td>
+ <span style="color: #0000ff;"> </span>
+		<p>
+ <span style="color: #0000ff;">
+			&nbsp; &nbsp; &nbsp;24&nbsp; &nbsp; </span>
+		</p>
+ <span style="color: #0000ff;"> </span>
+	</td>
+	<td>
+ <span style="color: #0000ff;"> </span>
+		<p>
+ <span style="color: #0000ff;">
+			&nbsp; &nbsp;&nbsp;15</span>&nbsp;&nbsp;&nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td colspan="1">
+		 &nbsp; &nbsp; <br>
+		 &nbsp; &nbsp; Принято заявок<br>
+ <br>
+	</td>
+	<td colspan="1">
+		 &nbsp;<span style="color: #0000ff;">&nbsp; &nbsp; &nbsp; 5</span>
+	</td>
+	<td colspan="1">
+ <span style="color: #0000ff;">&nbsp; &nbsp; &nbsp; 15</span>
+	</td>
+	<td colspan="1">
+ <span style="color: #0000ff;">&nbsp; &nbsp; &nbsp; 5</span>
+	</td>
+	<td colspan="1">
+ <span style="color: #0000ff;">&nbsp; &nbsp; &nbsp; 7</span>
+	</td>
+	<td colspan="1">
+ <span style="color: #0000ff;">&nbsp; &nbsp; &nbsp; 7</span>
+	</td>
+	<td colspan="1">
+ <span style="color: #0000ff;">&nbsp; &nbsp; 9</span>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<p>
+	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a title="Квартиры с кухней-столовой, в которых кухня объединена со столовой. В этих квартирах увеличенная общая площадь" href="http://planetar8.burbon.tmweb.ru/anketa/fp.php">"+"&nbsp;&nbsp;квартиры с кухней-столовой</a><br>
+</p>
+<p>
+	 1. Какая квартира Вас заинтересовала ?
+</p>
+<table border="1" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+	<td>
+		<p>
+			 &nbsp; &nbsp;1К&nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp;1К+&nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; 2К&nbsp; &nbsp;&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp;2К+&nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp;3К&nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; 3К+&nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp; <span style="color: #0000ff;">&nbsp;</span>&nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		 &nbsp; &nbsp; &nbsp;<span style="color: #0000ff;">V&nbsp; </span>
+	</td>
+	<td>
+ <span style="color: #0000ff;">&nbsp; &nbsp;&nbsp;</span>
+	</td>
+	<td>
+		<p>
+			 &nbsp;&nbsp;&nbsp;&nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+ <br>
+</p>
+<p>
+	 2. Какой этаж (этажи) для Вас предпочтительны ?<br>
+</p>
+<table border="1" cellspacing="1" cellpadding="0" style="height: 10px;">
+<tbody>
+<tr>
+	<td>
+		<p>
+			 &nbsp; от&nbsp;&nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">14</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp; до
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">18</span>
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<p>
+	 3. Внести деньги в течение 2-3 дней на счет эскроу
+</p>
+<table border="1" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+	<td>
+		<p>
+			 &nbsp;Собственные средства (100%)
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp;Ипотека
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">&nbsp; V</span>
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp;После продажи имеющейся недвижимости &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #0000ff;">&nbsp;V&nbsp; </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp;После закрытия депозита
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp;Иное
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+ <br>
+</p>
+<p>
+	 4. Какими средствами Вы располагаете для приобретение квартиры ? <br>
+ <br>
+ <img width="1001" alt="anketa-6.jpg" src="/upload/medialibrary/f45/anketa_6.jpg" height="120" title="anketa-6.jpg"><br>
+ <br>
+</p>
+<p>
+	 5. Как к Вам обращаться ?&nbsp;
+</p>
+<table border="1" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">&nbsp;</span><span style="color: #0000ff;"><i>Алексей Петров</i></span><span style="color: #0000ff;"><i>&nbsp; &nbsp;</i> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+		</p>
+ <span style="color: #0000ff;"> </span>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<p>
+ <br>
+</p>
+<p>
+	 6. Как с Вами связаться ?
+</p>
+<table border="1" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+	<td>
+		<p>
+			 &nbsp;телефон&nbsp; &nbsp;
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">&nbsp; <i>&nbsp;8-951 999 99 99&nbsp; </i></span><i>&nbsp; </i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			 &nbsp; e-mail
+		</p>
+	</td>
+	<td>
+		<p>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;"><a href="mailto:4569898@yandex.ru"><i>4569898@yandex.ru</i></a></span>
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+ <br>
+</p>
+<p>
+	 7.&nbsp;Я ознакомлен с <a href="http://planetar8.burbon.tmweb.ru/upload/iblock/8cd/politika-konfidentsialnosti.pdf" target="_blank">политикой конфиденциальности</a> и даю свое согласие на обработку персональных данных <br>
+ <br>
+</p>
+<p>
+ <img width="295" alt="anketa-5.jpg" src="/upload/medialibrary/123/anketa_5.jpg" height="57" title="anketa-5.jpg"><br>
+</p>
+<p>
+ <br>
+ <i>Спасибо за желание купить квартиру в нашем доме !</i>
+</p>
+<p>
+ <i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #0000ff;">телефоны для справок: &nbsp;&nbsp;8-910 143 30 10, &nbsp;</span></i><span style="color: #0000ff;">8-910&nbsp;</span><i><span style="color: #0000ff;">144 40 20</span></i><span style="color: #0000ff;"> </span>
+</p>
+<p>
+</p>
+<p>
+ <br>
+</p>
+ </article></h2>
