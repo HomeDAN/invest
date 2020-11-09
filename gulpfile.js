@@ -14,7 +14,7 @@ var gulp = require('gulp'),
     notify = require("gulp-notify"),
     rsync = require('gulp-rsync'),
     cssbeautify = require('gulp-cssbeautify'),
-    pug = require('gulp-pug'),
+    // pug = require('gulp-pug'),
     plumber = require('gulp-plumber'),
     imgRetina = require('gulp-img-retina');
 
@@ -40,14 +40,14 @@ gulp.task('common-js', function() {
         .pipe(gulp.dest('app/js'));
 });
 
-gulp.task('pug', function() {
-    return gulp.src('app/pug/**/*.pug')
-        .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(gulp.dest('app'))
-})
+// gulp.task('pug', function() {
+//     return gulp.src('app/pug/**/*.pug')
+//         .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
+//         .pipe(pug({
+//             pretty: true
+//         }))
+//         .pipe(gulp.dest('app'))
+// })
 
 gulp.task('js', ['common-js'], function() {
     return gulp.src([
@@ -80,9 +80,8 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream())
 });
 
-gulp.task('watch', ['css', 'sass', 'js', 'pug', 'browser-sync'], function() {
+gulp.task('watch', ['css', 'sass', 'js', 'browser-sync'], function() {
     gulp.watch('app/sass/**/*.sass', ['sass']);
-    gulp.watch('app/pug/**/*.pug', ['pug']);
     gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
     gulp.watch('app/*.html', browserSync.reload);
 });
