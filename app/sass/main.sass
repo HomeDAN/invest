@@ -1,24 +1,17 @@
 /*============ REFERENCES =============*/
 
-/**  1./.header                           **/
-/**	 2.Promo                          **/
-/**	 3.Header styles                  **/
-/**	 4.Menu styles                    **/
-/**	 5.Index projects styles          **/
-/**  6.Index footer styles            **/
-/**  7.Cookie styles                  **/
-/**  8.Page Contacts styles           **/
-/**  9.Instagram Section styles       **/
-/**  10.Main footer styles            **/
-/**  11.Interiors styles              **/
-/**    ^- 11.1Interiors Grid Styles   **/
-/**  12.Object-Single styles          **/
-/**  13.About Styles                  **/
-/**  14.Team Styles                   **/
-/**  15.Team Single Styles            **/
-/**  16.News Grid Styles              **/
-/**  17.News List Styles              **/
-/**  18.News Single Styles            **/
+/**  1. /.header                      **/
+/**	 2. /.stat                        **/
+/**	 3. /.about                       **/
+/**	 4. /.stages                      **/
+/**	 5. /.channels                    **/
+/**  6. /.support                     **/
+/**  7. /.team                        **/
+/**  8. /.context                     **/
+/**  9. /.results                     **/
+/**  10. /.target                     **/
+/**  11. /.seo                        **/
+/**  12. /.thanks                     **/
 
 
 
@@ -28,7 +21,6 @@
 
 $white: #FFFFFF
 $green: #00A650
-
 
 /** Fonts **/
 
@@ -80,9 +72,6 @@ $f_Magistral: 'Magistral', 'Arial', sans-serif
 
 $f_Magistral-Bold: 'Magistral-Bold', 'Arial', sans-serif
 
-//*
-//  outline: 1px solid red
-
 html, body
    min-width: 320px
    padding: 0
@@ -104,6 +93,7 @@ h1,h2,h3,h4,h5,h6
 .fw800
   font-weight: 800
   font-size: px-to-rem(20px)
+
 .scale2
   transform: scale(2)
   font-weight: 800
@@ -112,6 +102,10 @@ h1,h2,h3,h4,h5,h6
   padding: 0 20px
   @include media(768px)
     padding: 0 80px
+  @include media(1024px)
+    margin: 0 auto
+    width: 100%
+    max-width: 900px
   @include media(1440px)
     margin: 0 auto
     width: 100%
@@ -132,21 +126,58 @@ h1,h2,h3,h4,h5,h6
     padding: 20px 0 115px 0
   @include media(768px)
     padding: 20px 0 30px 0
+  @include media(1200px)
+    background: url(../img/bck@2x.svg) center no-repeat
+    background-size: cover
+    background-position: 0 -100px
+  @include media(1440px)
+    padding: 140px 0 140px 0
+    background-position: 0 0
+  @include media(1920px)
+    padding: 100px 0 100px 0
+    background-position: 0 0
+
   &__logo
     display: flex
     justify-content: center
 
-  &__title h1
-    font-size: px-to-rem(28px)
-    line-height: px-to-rem(43.2px)
-    letter-spacing: 3px
-    font-style: italic
-    font-weight: 500
-    font-family: $f_Magistral-Bold
-    text-align: center
-    color: $white
-    @include media(768px)
-      font-size: px-to-rem(34px)
+  &__container
+    @include media(1024px)
+      display: flex
+      flex-direction: row-reverse
+      justify-content: center
+      align-items: center
+    @include media(1440px)
+      padding: 0 0 30px 0
+      display: flex
+      justify-content: space-between
+    @include media(1920px)
+      padding: 0 0 30px 0
+      display: flex
+      justify-content: space-between
+
+  &__title
+    h1
+      font-size: px-to-rem(28px)
+      line-height: px-to-rem(43.2px)
+      letter-spacing: 3px
+      font-style: italic
+      font-weight: 500
+      font-family: $f_Magistral-Bold
+      text-align: center
+      color: $white
+      @include media(768px)
+        font-size: px-to-rem(34px)
+      @include media(1024px)
+        text-align: left
+      @include media(1440px)
+        font-size: px-to-rem(60px)
+        line-height: px-to-rem(90px)
+        margin: 0 0 40px 0
+      @include media(1920px)
+        font-size: px-to-rem(70px)
+        line-height: px-to-rem(90px)
+        margin: 0 0 40px 0
 
   &__subtitle
     text-align: center
@@ -157,7 +188,23 @@ h1,h2,h3,h4,h5,h6
       font-size: px-to-rem(24px)
       line-height: px-to-rem(30px)
       max-width: 400px
+    @include media(1440px)
+      margin: 0
+    @include media(1920px)
+      margin: 0
 
+    p
+      @include media(1024px)
+        font-family: $f_circe
+        text-align: left
+        font-size: px-to-rem(20px)
+        line-height: px-to-rem(28.8px)
+      @include media(1440px)
+        max-width: 600px
+        font-size: px-to-rem(24px)
+      @include media(1920px)
+        max-width: 600px
+        font-size: px-to-rem(24px)
 
   &__block-title
     font-family: $f_GothamBold
@@ -165,24 +212,47 @@ h1,h2,h3,h4,h5,h6
     font-size: px-to-rem(56px)
     color: $green
 
+.logo__img
+  @include media(1024px)
+    width: 387px
+  @include media(1920px)
+    width: 475px
+
 /* /.header */
+
 
 .stat
   width: 100%
-  //margin: 20px 0
   padding: 30px 0 0 0
-  background: url(../img/bck_1.png) center no-repeat
+  background: url(../img/bck_stat.png) center no-repeat
   background-size: cover
   box-sizing: border-box
   @include media(425px)
     background-size: contain
+  @include media(1024px)
+    background: url(../img/bck_stat_desktop.svg) center no-repeat
+
   &__container
     position: relative
     top: -20px
+    @include media(1024px)
+      display: flex
+      justify-content: center
+    @include media(1440px)
+      justify-content: space-between
+
   &__block
     padding: 20px 0 0 0
+    @include media(1024px)
+      margin: 0 60px
+    @include media(1440px)
+      padding: 110px 0px 0 80px
+      margin: 0
+    @include media(1920px)
+      padding: 110px 0 0 0
+      margin: 0 80px
+
   &__title
-    //padding: 5px 0
     position: relative
     font-size: px-to-rem(56px)
     line-height: px-to-rem(53.59px)
@@ -191,14 +261,27 @@ h1,h2,h3,h4,h5,h6
     font-family: $f_GothamBold
     color: $green
     text-align: center
-
-
+    @include media(1440px)
+      font-size: px-to-rem(75px)
+      line-height: px-to-rem(110px)
+      transform: scale(1.5)
+    @include media(1920px)
+      transform: scale(1)
+      font-size: px-to-rem(140px)
+      line-height: px-to-rem(110px)
 
   &__desc
     margin: 20px 0
     position: relative
     text-align: center
+    @include media(1440px)
+      font-size: px-to-rem(28px)
+      line-height: px-to-rem(38px)
+    @include media(1920px)
+      font-size: px-to-rem(36px)
+      line-height: px-to-rem(43px)
 
+/* /.stat */
 
 
 .about
@@ -206,38 +289,120 @@ h1,h2,h3,h4,h5,h6
   padding: 50px 0
   background: url("../img/bck_about.svg") center no-repeat
   background-size: cover
+  @include media(1024px)
+    padding: 120px 0
+    background: url("../img/bck_about@2x.svg") center no-repeat
+    background-size: cover
+  @include media(1440px)
+    padding: 80px 0 80px 0
+    background-position: 0 0
+  @include media(1920px)
+    padding: 80px 0 80px 0
+    background-position: 0 0
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     text-align: center
     color: $green
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: left
+    @include media(1440px)
+      margin: 0 0 50px 0
+      font-size: px-to-rem(44px)
+      line-height: px-to-rem(61px)
+    @include media(1920px)
+      margin: 0 0 75px 0
+      font-size: px-to-rem(54px)
+      line-height: px-to-rem(61px)
 
   &__item-title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: left
+    @include media(1440px)
+      margin: 76px 0 0 0
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+    @include media(1920px)
+      margin: 76px 0 0 0
+      font-size: px-to-rem(54px)
+      line-height: px-to-rem(61px)
+
   &__desc
     font-size: px-to-rem(18px)
     line-height: px-to-rem(23px)
     letter-spacing: 0.3px
+    @include media(1440px)
+      font-size: px-to-rem(26px)
+      line-height: px-to-rem(38px)
+    @include media(1920px)
+      font-size: px-to-rem(30px)
+      line-height: px-to-rem(38px)
+
   &__list
     padding: 60px 0 0 0
+    @include media(1024px)
+      display: flex
+      justify-content: space-between
+
   &__item
     margin: 0 0 45px 0
+
   &__item-header
     margin: 0 0 18px 0
+
   &__block
     display: flex
-    //justify-content: space-around
     align-items: self-start
+
   &__text
     margin: 0 0 0 10px
+    @include media(1024px)
+      max-width: 350px
+    @include media(1440px)
+      max-width: 400px
+      font-size: px-to-rem(18px)
+    @include media(1920px)
+      max-width: 600px
+      font-size: px-to-rem(26px)
+
   &__icon
     margin: 5px 0 0 0
+    @include media(1440px)
+      margin: 15px 0 0 0
+      width: 30px
+    @include media(1920px)
+      margin: 15px 0 0 0
+      width: 30px
+
   &__image
     width: 100%
     margin: 0 0 37px 0
+    @include media(1024px)
+      margin: 0
+      width: 700px
 
+  &__image-resize
+    @include media(1024px)
+      width: 300px
+      position: relative
+      bottom: -74px
+      align-self: flex-end
+
+  &__gallery
+    @include media(1024px)
+      display: flex
+      justify-content: center
+      justify-items: flex-end
+    @include media(1920px)
+      margin: 110px 0 0 0
 
 /* /.about*/
 
@@ -247,17 +412,36 @@ h1,h2,h3,h4,h5,h6
   padding: 0px 0
   @include media(768px)
     padding: 50px 0
+  @include media(1440px)
+    padding: 0
+  @include media(1920px)
+    padding: 50px 0 0 0
+
   &__list
     padding: 40px 0
+    @include media(1024px)
+      display: flex
+      justify-content: center
+
   &__item
+    width: 100%
     display: flex
-    justify-content: space-between
+    justify-content: center
     margin: 0 0 30px 0
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+    @include media(1440px)
+      font-size: px-to-rem(42px)
+    @include media(1920px)
+      font-size: px-to-rem(54px)
+
   &__text
     font-family: $f_circe
     font-size: px-to-rem(24px)
@@ -266,11 +450,26 @@ h1,h2,h3,h4,h5,h6
     word-break: break-word
     @include media(425px)
       width: 100%
+    @include media(1024px)
+      max-width: 150px
+      font-size: px-to-rem(20px)
+      letter-spacing: 1px
+      align-self: center
+    @include media(1440px)
+      font-size: px-to-rem(22px)
+      line-height: px-to-rem(32px)
+    @include media(1920px)
+      font-size: px-to-rem(26px)
+      line-height: px-to-rem(32px)
+
   &__icon
     width: 100px
     margin: 0 40px 0 0
+    @include media(1024px)
+      margin: 0 20px 0 0
 
 /* /.stages*/
+
 
 .channels
   width: 100%
@@ -279,37 +478,106 @@ h1,h2,h3,h4,h5,h6
   background-size: cover
   @include media(425px)
     background-position: 0 0
+  @include media(1024px)
+    padding: 80px 0
+    background: url("../img/bck_channels@2x.svg") center no-repeat
+    background-size: cover
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: right
+    @include media(1440px)
+      font-size: px-to-rem(44px)
+    @include media(1920px)
+      font-size: px-to-rem(54px)
+
   &__list
     padding: 20px 0
+    @include media(1920px)
+      padding: 60px 0
+
   &__item
     display: flex
     align-items: flex-start
+
   &__text
     margin: 0 0 15px 10px
+    @include media(1024px)
+      max-width: 700px
+    @include media(1440px)
+      max-width: 100%
+      font-size: px-to-rem(18px)
+    @include media(1920px)
+      max-width: 100%
+      font-size: px-to-rem(28px)
+
   &__icon
     margin: 5px 0 0 0
-
+    @include media(1440px)
+      width: 20px
+    @include media(1920px)
+      width: 20px
 
 /* /.channels */
 
 
 .support
   padding: 60px 0
+  @include media(1440px)
+    padding: 30px 0
+  @include media(1920px)
+    padding: 60px 0 0 0
+
   &__title
     font-size: px-to-rem(22px)
     line-height: px-to-rem(35.38px)
     letter-spacing: 0.3px
     color: $green
     text-align: center
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: left
+    @include media(1440px)
+      font-size: px-to-rem(42px)
+    @include media(1920px)
+      font-size: px-to-rem(54px)
+
   &__content
     padding: 35px 0
+    @include media(1024px)
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+
+  &__text
+    max-width: 400px
+    @include media(425px)
+      margin: 20px auto 0 auto
+      text-align: center
+    @include media(1024px)
+      margin: 0
+      text-align: left
+    @include media(1920px)
+      max-width: 600px
+      font-size: px-to-rem(26px)
+
+  &__img
+    display: block
+    margin: 0 auto
+    @include media(1920px)
+      position: relative
+      top: -100px
+      width: 300px
 
 /* /.support */
+
 
 .team
   width: 100%
@@ -320,55 +588,152 @@ h1,h2,h3,h4,h5,h6
     background-size: auto
   @include media(375px)
     background-size: cover
+  @include media(1024px)
+    padding: 0 0 110px 0
+    background: url("../img/bck_team@2x.svg") center no-repeat
+    background-size: cover
+    background-position: 0 60px
 
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: left
+    @include media(1440px)
+      font-size: px-to-rem(42px)
+    @include media(1920px)
+      font-size: px-to-rem(54px)
+
   &__subtitle
     margin: 0 auto
     max-width: 222px
     text-align: center
+    @include media(1024px)
+      max-width: 100%
+      text-align: left
+    @include media(1440px)
+      font-size: px-to-rem(18px)
+      letter-spacing: 1px
+    @include media(1920px)
+      font-size: px-to-rem(28px)
+      letter-spacing: 1px
+
   &__list
     color: $white
     padding: 50px 0
     @include media(425px)
       padding: 100px 0 50px 0
+
   &__item
     display: flex
     align-items: flex-start
     margin: 0 0 7px 0
+
   &__text
     margin: 0 0 0 10px
     letter-spacing: 0.3px
+    @include media(1440px)
+      margin: 0 0 0 20px
+      font-size: px-to-rem(18px)
+    @include media(1920px)
+      font-size: px-to-rem(28px)
+
   &__icon
     width: 15px
     margin: 5px 0 0 0
-
+    @include media(1920px)
+      width: 20px
 
 /* /.team */
 
+
 .context
   padding: 70px 0
+  @include media(1024px)
+    position: relative
+    &:after
+      @include pseudo(286px, 286px)
+      top: -120px
+      left: 120px
+      background: url("../img/target.svg") center no-repeat
+  @include media(1440px)
+    padding: 10px 0 0 0
+    position: relative
+    &:after
+      @include pseudo(286px, 286px)
+      top: -130px
+      left: 200px
+      background: url("../img/target.svg") center no-repeat
+      transform: scale(1)
+  @include media(1920px)
+    padding: 100px 0 0 0
+    position: relative
+    &:after
+      @include pseudo(286px, 286px)
+      top: -100px
+      left: 312px
+      background: url("../img/target.svg") center no-repeat
+      transform: scale(1.5)
+
+  &__header
+    @include media(1024px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: right
+    @include media(1920px)
+      font-size: px-to-rem(54px)
+
   &__subtitle
     margin: 5px 0 0 0
     text-align: center
+    @include media(1024px)
+      max-width: 516px
+      text-align: left
+      align-self: flex-end
+    @include media(1920px)
+      max-width: 667px
+      font-size: px-to-rem(26px)
+      letter-spacing: 1px
+
   &__list
     padding: 10px 0
+    @include media(1440px)
+      padding: 70px 0 0 0
+    @include media(1920px)
+      padding: 80px 0
+
   &__item
     display: flex
     align-items: flex-start
     margin: 0 0 8px 0
+    @include media(1440px)
+      margin: 0 0 20px 0
+    @include media(1920px)
+      margin: 0 0 20px 0
+
   &__text
     margin: 0 0 0 10px
+    @include media(1920px)
+      font-size: px-to-rem(26px)
+
   &__icon
     margin: 5px 0 0 0
+    @include media(1920px)
+      width: 20px
 
 /* /.context */
 
@@ -381,11 +746,27 @@ h1,h2,h3,h4,h5,h6
     padding: 30px 0 50px 0
     background-size: cover
     background-position: 0 55px
+  @include media(1440px)
+    padding: 50px 0
+    background: url("../img/bck_result@2x.svg") center no-repeat
+    background-position: 0 0
+  @include media(1920px)
+    background: url("../img/bck_result@2x.svg") center no-repeat
+    background-position: 0 0
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+    @include media(1440px)
+      font-size: px-to-rem(42px)
+    @include media(1920px)
+      font-size: px-to-rem(54px)
+
   &__item-title
     font-size: px-to-rem(36px)
     line-height: px-to-rem(34.45px)
@@ -393,46 +774,164 @@ h1,h2,h3,h4,h5,h6
     font-weight: 800
     text-align: center
     color: $green
+    @include media(1920px)
+      font-size: px-to-rem(40px)
+
   &__item-text
     font-size: px-to-rem(26px)
     line-height: px-to-rem(28.8px)
     text-align: center
+    @include media(1024px)
+      font-family: $f_circe
+      font-size: px-to-rem(22px)
+    @include media(1920px)
+      font-size: px-to-rem(30px)
+
   &__list
     padding: 30px 0
+    @include media(1024px)
+      display: flex
+      flex-wrap: wrap
+    @include media(1440px)
+      padding: 80px 0 0 0
+    @include media(1920px)
+      padding: 70px 0
+
   &__item
     margin: 0 0 52px 0
-
+    @include media(1024px)
+      width: 33%
+    @include media(1440px)
+      margin: 0 0 75px 0
 
 /* /.results */
+
 
 .target
   @include media(425px)
     display: block
     padding: 50px 0
+  @include media(1440px)
+    padding: 0
+  @include media(1920px)
+
+    padding: 0
+  &__header
+    @include media(1024px)
+      padding: 30px 0
+      display: flex
+      position: relative
+      justify-content: flex-end
+      &:after
+        @include pseudo(407px, 245px)
+        top: 0
+        left: 50px
+        background: url("../img/Mac-side.png") center no-repeat
+    @include media(1440px)
+      position: relative
+      justify-content: flex-end
+      &:after
+        @include pseudo(450px, 245px)
+        top: 0
+        left: 0
+        background: url("../img/Mac-side.png") center no-repeat
+    @include media(1920px)
+      position: relative
+      justify-content: flex-end
+      &:after
+        @include pseudo(450px, 245px)
+        top: 0
+        left: 50px
+        background: url("../img/Mac-side.png") center no-repeat
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(30px)
     color: $green
     text-align: center
+    @include media(1024px)
+      display: flex
+      flex-direction: column
+      max-width: 400px
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: left
+    @include media(1440px)
+      max-width: 440px
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(50px)
+    @include media(1920px)
+      max-width: 540px
+      font-size: px-to-rem(54px)
+
   &__block-title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(28.8px)
     font-family: $f_circe-thin
+    @include media(1440px)
+      font-size: px-to-rem(32px)
+    @include media(1920px)
+      font-size: px-to-rem(40px)
+
   &__container
     padding: 35px 0 0 0
+    @include media(1024px)
+      padding: 35px 40px
+      display: flex
+      justify-content: space-between
+    @include media(1440px)
+      padding: 100px 0 0 0
+    @include media(1920px)
+      padding: 170px 0 0 0
+
   &__block-list
     padding: 18px 0
+    @include media(1440px)
+      padding: 30px 0 10px 0
+    @include media(1920px)
+      padding: 30px 0 10px 0
+
   &__block-item
     display: flex
     align-items: flex-start
     margin: 0 0 10px 0
+    @include media(1440px)
+      margin: 0 0 15px 0
+    @include media(1920px)
+      margin: 0 0 15px 0
+
   &__block
     margin: 0 0 10px 0
+
   &__block-text
     margin: 0 0 0 10px
+    @include media(1440px)
+      font-size: px-to-rem(18px)
+      margin: 0 0 0 20px
+    @include media(1920px)
+      font-size: px-to-rem(24px)
+      margin: 0 0 0 20px
+
+  &__desc-text
+    @include media(1024px)
+      padding: 0 40px
+      max-width: 700px
+    @include media(1440px)
+      padding: 0
+      max-width: 850px
+      font-size: px-to-rem(18px)
+    @include media(1920px)
+      padding: 0
+      max-width: 850px
+      font-size: px-to-rem(24px)
+
   &__block-icon
     margin: 5px 0 0 0
+    @include media(1920px)
+      width: 20px
+
 /* /.target */
+
 
 .seo
   padding: 45px 0
@@ -444,39 +943,124 @@ h1,h2,h3,h4,h5,h6
     background-size: cover
   @include media(375px)
     background-size: cover
+  @include media(1440px)
+    padding: 60px 0 150px 0
+    background: url("../img/bck_seo@2x.svg") center no-repeat
+  @include media(1920px)
+    padding: 100px 0 200px 0
+    background: url("../img/bck_seo@2x.svg") center no-repeat
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
+    @include media(1024px)
+      font-size: px-to-rem(42px)
+      line-height: px-to-rem(61px)
+      text-align: left
+    @include media(1440px)
+      font-size: px-to-rem(42px)
+    @include media(1920px)
+      font-size: px-to-rem(54px)
+
   &__wrapper
     padding: 75px 0 0 0
     @include media(768px)
       padding: 120px 0 0 0
+
   &__block
     margin: 0 0 32px 0
+
   &__block-title
     font-family: $f_circe
     font-size: px-to-rem(24px)
     letter-spacing: 1.3px
     font-weight: 600
+    @include media(1440px)
+      font-size: px-to-rem(30px)
+      letter-spacing: 4px
+    @include media(1920px)
+      font-size: px-to-rem(36px)
+      letter-spacing: 4px
+
+  &__text-main
+    margin: 10px 0 0 0
+    letter-spacing: 1px
+    @include media(1024px)
+      width: 320px
+    @include media(1440px)
+      width: 100%
+      font-size: px-to-rem(18px)
+      letter-spacing: 1px
+    @include media(1920px)
+      width: 100%
+      font-size: px-to-rem(24px)
+      letter-spacing: 3px
+
   &__text
     margin: 10px 0 0 0
     letter-spacing: 1px
+
+  &__traffic
+    @include media(1440px)
+      width: 100%
+      font-size: px-to-rem(18px)
+      letter-spacing: 3px
+    @include media(1920px)
+      width: 100%
+      font-size: px-to-rem(24px)
+      letter-spacing: 3px
+
   &__list
     padding: 15px 0 0 0
+    @include media(1024px)
+      display: flex
+
   &__item
     margin: 0 0 22px 0
     width: 100%
     display: flex
     &:last-child
       margin: 0
+    @include media(1024px)
+      width: 35%
+      margin: 0
+
+  &__text-container
+    @include media(1440px)
+      padding: 10px 0
+    @include media(1920px)
+      padding: 20px 0
+
+  &__text-block
+    @include media(1024px)
+      display: flex
+    @include media(1440px)
+      margin: 0 0 15px 0
+    @include media(1920px)
+      margin: 0 0 20px 0
+
+  &__text-stat
+    @include media(1024px)
+      width: 320px
+    @include media(1440px)
+      width: 400px
+      margin: 0
+      font-size: px-to-rem(18px)
+    @include media(1920px)
+      width: 400px
+      margin: 0
+      font-size: px-to-rem(25px)
+
   &__logo
     margin: 0 30px 0 0
+
   &__icon-arrow
     margin: 0 20px 0 15px
 
 /* /.seo */
+
 
 .thanks
   width: 100%
@@ -486,10 +1070,24 @@ h1,h2,h3,h4,h5,h6
   background-position: 0 50px
   @include media(375px)
     background-size: cover
+  @include media(1440px)
+    padding: 0 0 50px 0
+    background: url("../img/bck_thanks@2x.svg") center no-repeat
+    background-size: cover
+    background-position: 0 0
+  @include media(1920px)
+    background: url("../img/bck_thanks@2x.svg") center no-repeat
+    background-size: cover
+    background-position: 0 0
+
   &__title
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
+    @include media(1440px)
+      font-size: px-to-rem(42px)
+    @include media(1920px)
+      font-size: px-to-rem(54px)
 
 /* /.thanks */
