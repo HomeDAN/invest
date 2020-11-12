@@ -102,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   .container {
     margin: 0 auto;
-    width: 100%;
     max-width: 900px;
   }
 }
@@ -466,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
 /* /.stat */
 .about {
   width: 100%;
-  padding: 50px 0;
+  margin: 40px 0 0 0;
   background: url("../img/bck_about.svg") center no-repeat;
   background-size: cover;
 }
@@ -1433,6 +1432,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 1024px) {
+  .results {
+    padding: 50px 0;
+    background: url("../img/bck_result@2x.svg") center no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 1440px) {
   .results {
     padding: 50px 0;
@@ -1840,11 +1848,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* /.target */
 .seo {
+  margin: 70px 0 0 0;
   padding: 45px 0;
   color: #FFFFFF;
   background: url("../img/bck_seo.svg") center no-repeat;
   background-size: cover;
-  background-position: 0 70px;
 }
 
 @media (min-width: 320px) {
@@ -1855,6 +1863,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 375px) {
   .seo {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .seo {
+    padding: 60px 0;
+    background: url("../img/bck_seo@2x.svg") center no-repeat;
     background-size: cover;
   }
 }
@@ -1872,6 +1888,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 0 200px 0;
     background: url("../img/bck_seo@2x.svg") center no-repeat;
   }
+}
+
+.seo__header {
+  position: relative;
+  top: -75px;
 }
 
 .seo__title {
@@ -1902,16 +1923,6 @@ h1, h2, h3, h4, h5, h6 {
   .seo__title {
     font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
-  }
-}
-
-.seo__wrapper {
-  padding: 75px 0 0 0;
-}
-
-@media (min-width: 768px) {
-  .seo__wrapper {
-    padding: 120px 0 0 0;
   }
 }
 
@@ -2118,8 +2129,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .thanks__title {
   font-family: "circe", "Arial", sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.21125rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   color: #00A650;
   text-align: center;
 }
@@ -2134,7 +2145,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1920px) {
   .thanks__title {
     position: relative;
-    top: -50px;
+    top: -22px;
     font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }

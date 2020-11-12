@@ -104,7 +104,6 @@ h1,h2,h3,h4,h5,h6
     padding: 0 80px
   @include media(1024px)
     margin: 0 auto
-    width: 100%
     max-width: 900px
   @include media(1440px)
     margin: 0 auto
@@ -286,7 +285,8 @@ h1,h2,h3,h4,h5,h6
 
 .about
   width: 100%
-  padding: 50px 0
+  margin: 40px 0 0 0
+  //padding: 50px 0
   background: url("../img/bck_about.svg") center no-repeat
   background-size: cover
   @include media(1024px)
@@ -796,6 +796,11 @@ h1,h2,h3,h4,h5,h6
     padding: 30px 0 50px 0
     background-size: cover
     background-position: 0 55px
+  @include media(1024px)
+    padding: 50px 0
+    background: url("../img/bck_result@2x.svg") center no-repeat
+    background-position: 0 0
+    background-size: cover
   @include media(1440px)
     padding: 50px 0
     background: url("../img/bck_result@2x.svg") center no-repeat
@@ -997,14 +1002,19 @@ h1,h2,h3,h4,h5,h6
 
 
 .seo
+  margin: 70px 0 0 0
   padding: 45px 0
   color: $white
   background: url("../img/bck_seo.svg") center no-repeat
   background-size: cover
-  background-position: 0 70px
+  //background-position: 0 70px
   @include media(320px)
     background-size: cover
   @include media(375px)
+    background-size: cover
+  @include media(1024px)
+    padding: 60px 0
+    background: url("../img/bck_seo@2x.svg") center no-repeat
     background-size: cover
   @include media(1440px)
     padding: 60px 0 150px 0
@@ -1013,6 +1023,10 @@ h1,h2,h3,h4,h5,h6
   @include media(1920px)
     padding: 100px 0 200px 0
     background: url("../img/bck_seo@2x.svg") center no-repeat
+
+  &__header
+    position: relative
+    top: -75px
 
   &__title
     font-family: $f_circe
@@ -1032,10 +1046,6 @@ h1,h2,h3,h4,h5,h6
       font-family: $f_circe
       font-size: px-to-rem(54px)
 
-  &__wrapper
-    padding: 75px 0 0 0
-    @include media(768px)
-      padding: 120px 0 0 0
 
   &__block
     margin: 0 0 32px 0
@@ -1150,8 +1160,8 @@ h1,h2,h3,h4,h5,h6
 
   &__title
     font-family: $f_circe
-    font-size: px-to-rem(24px)
-    line-height: px-to-rem(35.38px)
+    font-size: px-to-rem(20px)
+    line-height: px-to-rem(28px)
     color: $green
     text-align: center
     @include media(1440px)
@@ -1159,7 +1169,7 @@ h1,h2,h3,h4,h5,h6
       font-size: px-to-rem(42px)
     @include media(1920px)
       position: relative
-      top: -50px
+      top: -22px
       font-family: $f_circe
       font-size: px-to-rem(54px)
 
