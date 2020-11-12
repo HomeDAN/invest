@@ -1181,27 +1181,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  .context {
+  .context__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
   }
-  .context:after {
+  .context__header:after {
     content: '';
     display: block;
     position: absolute;
     width: 286px;
     height: 286px;
     top: -120px;
-    left: 120px;
+    left: 00px;
     background: url("../img/target.svg") center no-repeat;
   }
 }
 
 @media (min-width: 1440px) {
-  .context {
+  .context__header {
     padding: 10px 0 0 0;
     position: relative;
   }
-  .context:after {
+  .context__header:after {
     content: '';
     display: block;
     position: absolute;
@@ -1217,40 +1230,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1920px) {
-  .context {
+  .context__header {
     padding: 100px 0 0 0;
     position: relative;
   }
-  .context:after {
+  .context__header:after {
     content: '';
     display: block;
     position: absolute;
     width: 286px;
     height: 286px;
-    top: -100px;
-    left: 312px;
+    top: -120px;
+    left: 50px;
     background: url("../img/target.svg") center no-repeat;
     -webkit-transform: scale(1.5);
         -ms-transform: scale(1.5);
             transform: scale(1.5);
-  }
-}
-
-@media (min-width: 1024px) {
-  .context__header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1378,6 +1373,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 50px 0;
     background: url("../img/bck_result@2x.svg") center no-repeat;
     background-position: 0 0;
+    background-size: cover;
   }
 }
 
@@ -1385,6 +1381,7 @@ h1, h2, h3, h4, h5, h6 {
   .results {
     background: url("../img/bck_result@2x.svg") center no-repeat;
     background-position: 0 0;
+    background-size: cover;
   }
 }
 
@@ -1785,6 +1782,7 @@ h1, h2, h3, h4, h5, h6 {
   .seo {
     padding: 60px 0 150px 0;
     background: url("../img/bck_seo@2x.svg") center no-repeat;
+    background-size: cover;
   }
 }
 
