@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 3.34938rem;
   letter-spacing: 3px;
   font-weight: 600;
-  font-family: "GothamBold", "Arial", sans-serif;
+  font-family: "GothamPro", "Arial", sans-serif;
   color: #00A650;
   text-align: center;
 }
@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-    font-size: 8.75rem;
+    font-size: 7.5rem;
     line-height: 6.875rem;
   }
 }
@@ -481,19 +481,22 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .about {
-    padding: 80px 0 80px 0;
+    padding: 50px 0 80px 0;
+    background-size: auto;
     background-position: 0 0;
   }
 }
 
 @media (min-width: 1920px) {
   .about {
-    padding: 80px 0 80px 0;
+    padding: 80px 0 110px 0;
     background-position: 0 0;
+    background-size: cover;
   }
 }
 
 .about__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   text-align: center;
@@ -502,6 +505,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .about__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: left;
@@ -510,6 +514,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .about__title {
+    font-family: "circe", "Arial", sans-serif;
     margin: 0 0 50px 0;
     font-size: 2.75rem;
     line-height: 3.8125rem;
@@ -518,6 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1920px) {
   .about__title {
+    font-family: "circe", "Arial", sans-serif;
     margin: 0 0 75px 0;
     font-size: 3.375rem;
     line-height: 3.8125rem;
@@ -525,6 +531,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__item-title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -532,6 +539,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .about__item-title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: left;
@@ -540,6 +548,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .about__item-title {
+    font-family: "circe", "Arial", sans-serif;
     margin: 76px 0 0 0;
     font-size: 2.625rem;
     line-height: 3.8125rem;
@@ -548,6 +557,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1920px) {
   .about__item-title {
+    font-family: "circe", "Arial", sans-serif;
     margin: 76px 0 0 0;
     font-size: 3.375rem;
     line-height: 3.8125rem;
@@ -640,14 +650,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .about__icon {
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
     width: 30px;
   }
 }
 
 @media (min-width: 1920px) {
   .about__icon {
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
     width: 30px;
   }
 }
@@ -665,13 +675,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  .about__image-resize {
+  .about__image-left {
+    position: relative;
+    right: -30px;
+    bottom: -50px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about__image-left {
+    width: 900px;
+    bottom: -200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__image-right {
     width: 300px;
     position: relative;
-    bottom: -74px;
+    bottom: -130px;
+    left: -30px;
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about__image-right {
+    position: relative;
+    width: 400px;
+    right: -30px;
+    bottom: -282px;
   }
 }
 
@@ -691,7 +726,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1920px) {
   .about__gallery {
-    margin: 110px 0 0 0;
+    margin: 0;
   }
 }
 
@@ -715,7 +750,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1920px) {
   .stages {
-    padding: 50px 0 0 0;
+    padding: 150px 0 0 0;
   }
 }
 
@@ -750,6 +785,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stages__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -758,6 +794,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .stages__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
   }
@@ -765,12 +802,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .stages__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
   }
 }
 
 @media (min-width: 1920px) {
   .stages__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }
@@ -848,6 +887,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .channels__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -856,6 +896,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .channels__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: right;
@@ -864,12 +905,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .channels__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.75rem;
   }
 }
 
 @media (min-width: 1920px) {
   .channels__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }
@@ -923,14 +966,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0 0 0;
 }
 
-@media (min-width: 1440px) {
-  .channels__icon {
-    width: 20px;
-  }
-}
-
 @media (min-width: 1920px) {
   .channels__icon {
+    margin: 15px 0 0 0;
     width: 20px;
   }
 }
@@ -953,6 +991,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .support__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.375rem;
   line-height: 2.21125rem;
   letter-spacing: 0.3px;
@@ -962,6 +1001,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .support__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: left;
@@ -970,12 +1010,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .support__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
   }
 }
 
 @media (min-width: 1920px) {
   .support__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }
@@ -1070,6 +1112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -1078,6 +1121,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .team__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: left;
@@ -1086,12 +1130,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .team__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
   }
 }
 
 @media (min-width: 1920px) {
   .team__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }
@@ -1169,8 +1215,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0 0 0;
 }
 
+@media (min-width: 1440px) {
+  .team__icon {
+    margin: 15px 0 0 0;
+  }
+}
+
 @media (min-width: 1920px) {
   .team__icon {
+    margin: 15px 0 0 0;
     width: 20px;
   }
 }
@@ -1206,6 +1259,7 @@ h1, h2, h3, h4, h5, h6 {
     top: -120px;
     left: 00px;
     background: url("../img/target.svg") center no-repeat;
+    z-index: -100;
   }
 }
 
@@ -1220,9 +1274,10 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 286px;
     height: 286px;
-    top: -130px;
-    left: 200px;
+    top: -176px;
+    left: 0px;
     background: url("../img/target.svg") center no-repeat;
+    z-index: -100;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
@@ -1250,6 +1305,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .context__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -1258,6 +1314,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .context__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: right;
@@ -1266,6 +1323,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1920px) {
   .context__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }
@@ -1347,8 +1405,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0 0 0;
 }
 
+@media (min-width: 1440px) {
+  .context__icon {
+    margin: 12px 0 0 0;
+  }
+}
+
 @media (min-width: 1920px) {
   .context__icon {
+    margin: 12px 0 0 0;
     width: 20px;
   }
 }
@@ -1386,6 +1451,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .results__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -1394,6 +1460,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .results__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
   }
@@ -1401,12 +1468,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .results__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
   }
 }
 
 @media (min-width: 1920px) {
   .results__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }
@@ -1575,6 +1644,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .target__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 1.875rem;
   color: #00A650;
@@ -1593,6 +1663,7 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 400px;
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: left;
@@ -1601,6 +1672,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .target__title {
+    font-family: "circe", "Arial", sans-serif;
     max-width: 440px;
     font-size: 2.625rem;
     line-height: 3.125rem;
@@ -1609,6 +1681,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1920px) {
   .target__title {
+    font-family: "circe", "Arial", sans-serif;
     max-width: 540px;
     font-size: 3.375rem;
   }
@@ -1751,8 +1824,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0 0 0;
 }
 
+@media (min-width: 1440px) {
+  .target__block-icon {
+    margin: 10px 0 0 0;
+  }
+}
+
 @media (min-width: 1920px) {
   .target__block-icon {
+    margin: 10px 0 0 0;
     width: 20px;
   }
 }
@@ -1794,6 +1874,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .seo__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -1802,6 +1883,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   .seo__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
     line-height: 3.8125rem;
     text-align: left;
@@ -1810,12 +1892,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .seo__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
   }
 }
 
 @media (min-width: 1920px) {
   .seo__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }
@@ -2032,6 +2116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thanks__title {
+  font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 2.21125rem;
   color: #00A650;
@@ -2040,12 +2125,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1440px) {
   .thanks__title {
+    font-family: "circe", "Arial", sans-serif;
     font-size: 2.625rem;
   }
 }
 
 @media (min-width: 1920px) {
   .thanks__title {
+    position: relative;
+    top: -50px;
+    font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
   }
 }

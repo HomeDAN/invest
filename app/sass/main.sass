@@ -258,7 +258,7 @@ h1,h2,h3,h4,h5,h6
     line-height: px-to-rem(53.59px)
     letter-spacing: 3px
     font-weight: 600
-    font-family: $f_GothamBold
+    font-family: $f_GothamPro
     color: $green
     text-align: center
     @include media(1440px)
@@ -267,7 +267,7 @@ h1,h2,h3,h4,h5,h6
       transform: scale(1.5)
     @include media(1920px)
       transform: scale(1)
-      font-size: px-to-rem(140px)
+      font-size: px-to-rem(120px)
       line-height: px-to-rem(110px)
 
   &__desc
@@ -294,43 +294,53 @@ h1,h2,h3,h4,h5,h6
     background: url("../img/bck_about@2x.svg") center no-repeat
     background-size: cover
   @include media(1440px)
-    padding: 80px 0 80px 0
+    padding: 50px 0 80px 0
+    background-size: auto
     background-position: 0 0
   @include media(1920px)
-    padding: 80px 0 80px 0
+    padding: 80px 0 110px 0
     background-position: 0 0
+    background-size: cover
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     text-align: center
     color: $green
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: left
     @include media(1440px)
+      font-family: $f_circe
       margin: 0 0 50px 0
       font-size: px-to-rem(44px)
       line-height: px-to-rem(61px)
     @include media(1920px)
+      font-family: $f_circe
       margin: 0 0 75px 0
       font-size: px-to-rem(54px)
       line-height: px-to-rem(61px)
 
   &__item-title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: left
     @include media(1440px)
+      font-family: $f_circe
       margin: 76px 0 0 0
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
     @include media(1920px)
+      font-family: $f_circe
       margin: 76px 0 0 0
       font-size: px-to-rem(54px)
       line-height: px-to-rem(61px)
@@ -376,10 +386,10 @@ h1,h2,h3,h4,h5,h6
   &__icon
     margin: 5px 0 0 0
     @include media(1440px)
-      margin: 15px 0 0 0
+      margin: 10px 0 0 0
       width: 30px
     @include media(1920px)
-      margin: 15px 0 0 0
+      margin: 10px 0 0 0
       width: 30px
 
   &__image
@@ -388,21 +398,35 @@ h1,h2,h3,h4,h5,h6
     @include media(1024px)
       margin: 0
       width: 700px
+    @include media(1920px)
 
-  &__image-resize
+  &__image-left
+    @include media(1024px)
+      position: relative
+      right: -30px
+      bottom: -50px
+    @include media(1920px)
+      width: 900px
+      bottom: -200px
+  &__image-right
     @include media(1024px)
       width: 300px
       position: relative
-      bottom: -74px
+      bottom: -130px
+      left: -30px
       align-self: flex-end
-
+    @include media(1920px)
+      position: relative
+      width: 400px
+      right: -30px
+      bottom: -282px
   &__gallery
     @include media(1024px)
       display: flex
       justify-content: center
       justify-items: flex-end
     @include media(1920px)
-      margin: 110px 0 0 0
+      margin: 0
 
 /* /.about*/
 
@@ -415,7 +439,7 @@ h1,h2,h3,h4,h5,h6
   @include media(1440px)
     padding: 0
   @include media(1920px)
-    padding: 50px 0 0 0
+    padding: 150px 0 0 0
 
   &__list
     padding: 40px 0
@@ -430,16 +454,20 @@ h1,h2,h3,h4,h5,h6
     margin: 0 0 30px 0
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
     @include media(1440px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
     @include media(1920px)
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
   &__text
@@ -484,17 +512,21 @@ h1,h2,h3,h4,h5,h6
     background-size: cover
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: right
     @include media(1440px)
+      font-family: $f_circe
       font-size: px-to-rem(44px)
     @include media(1920px)
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
   &__list
@@ -519,9 +551,10 @@ h1,h2,h3,h4,h5,h6
 
   &__icon
     margin: 5px 0 0 0
-    @include media(1440px)
-      width: 20px
+
+
     @include media(1920px)
+      margin: 15px 0 0 0
       width: 20px
 
 /* /.channels */
@@ -535,18 +568,22 @@ h1,h2,h3,h4,h5,h6
     padding: 60px 0 0 0
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(22px)
     line-height: px-to-rem(35.38px)
     letter-spacing: 0.3px
     color: $green
     text-align: center
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: left
     @include media(1440px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
     @include media(1920px)
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
   &__content
@@ -595,17 +632,21 @@ h1,h2,h3,h4,h5,h6
     background-position: 0 60px
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: left
     @include media(1440px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
     @include media(1920px)
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
   &__subtitle
@@ -645,7 +686,10 @@ h1,h2,h3,h4,h5,h6
   &__icon
     width: 15px
     margin: 5px 0 0 0
+    @include media(1440px)
+      margin: 15px 0 0 0
     @include media(1920px)
+      margin: 15px 0 0 0
       width: 20px
 
 /* /.team */
@@ -664,14 +708,16 @@ h1,h2,h3,h4,h5,h6
         top: -120px
         left: 00px
         background: url("../img/target.svg") center no-repeat
+        z-index: -100
     @include media(1440px)
       padding: 10px 0 0 0
       position: relative
       &:after
         @include pseudo(286px, 286px)
-        top: -130px
-        left: 200px
+        top: -176px
+        left: 0px
         background: url("../img/target.svg") center no-repeat
+        z-index: -100
         transform: scale(1)
     @include media(1920px)
       padding: 100px 0 0 0
@@ -684,15 +730,18 @@ h1,h2,h3,h4,h5,h6
         transform: scale(1.5)
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: right
     @include media(1920px)
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
   &__subtitle
@@ -730,7 +779,10 @@ h1,h2,h3,h4,h5,h6
 
   &__icon
     margin: 5px 0 0 0
+    @include media(1440px)
+      margin: 12px 0 0 0
     @include media(1920px)
+      margin: 12px 0 0 0
       width: 20px
 
 /* /.context */
@@ -755,16 +807,20 @@ h1,h2,h3,h4,h5,h6
     background-size: cover
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
     @include media(1440px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
     @include media(1920px)
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
   &__item-title
@@ -814,7 +870,6 @@ h1,h2,h3,h4,h5,h6
   @include media(1440px)
     padding: 0
   @include media(1920px)
-
     padding: 0
   &__header
     @include media(1024px)
@@ -845,6 +900,7 @@ h1,h2,h3,h4,h5,h6
         background: url("../img/Mac-side.png") center no-repeat
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(30px)
     color: $green
@@ -853,14 +909,17 @@ h1,h2,h3,h4,h5,h6
       display: flex
       flex-direction: column
       max-width: 400px
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: left
     @include media(1440px)
+      font-family: $f_circe
       max-width: 440px
       font-size: px-to-rem(42px)
       line-height: px-to-rem(50px)
     @include media(1920px)
+      font-family: $f_circe
       max-width: 540px
       font-size: px-to-rem(54px)
 
@@ -927,7 +986,10 @@ h1,h2,h3,h4,h5,h6
 
   &__block-icon
     margin: 5px 0 0 0
+    @include media(1440px)
+      margin: 10px 0 0 0
     @include media(1920px)
+      margin: 10px 0 0 0
       width: 20px
 
 /* /.target */
@@ -952,17 +1014,21 @@ h1,h2,h3,h4,h5,h6
     background: url("../img/bck_seo@2x.svg") center no-repeat
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
     @include media(1024px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
       line-height: px-to-rem(61px)
       text-align: left
     @include media(1440px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
     @include media(1920px)
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
   &__wrapper
@@ -1082,13 +1148,18 @@ h1,h2,h3,h4,h5,h6
     background-position: 0 0
 
   &__title
+    font-family: $f_circe
     font-size: px-to-rem(24px)
     line-height: px-to-rem(35.38px)
     color: $green
     text-align: center
     @include media(1440px)
+      font-family: $f_circe
       font-size: px-to-rem(42px)
     @include media(1920px)
+      position: relative
+      top: -50px
+      font-family: $f_circe
       font-size: px-to-rem(54px)
 
 /* /.thanks */
