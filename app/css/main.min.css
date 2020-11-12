@@ -1256,7 +1256,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 286px;
     height: 286px;
-    top: -120px;
+    top: -185px;
     left: 00px;
     background: url("../img/target.svg") center no-repeat;
     z-index: -100;
@@ -1483,7 +1483,7 @@ h1, h2, h3, h4, h5, h6 {
 .results__item-title {
   font-size: 2.25rem;
   line-height: 2.15313rem;
-  font-family: "GothamBold", "Arial", sans-serif;
+  font-family: "GothamPro", "Arial", sans-serif;
   font-weight: 800;
   text-align: center;
   color: #00A650;
@@ -1684,6 +1684,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "circe", "Arial", sans-serif;
     max-width: 540px;
     font-size: 3.375rem;
+    line-height: 4.0625rem;
   }
 }
 
