@@ -1895,6 +1895,13 @@ h1, h2, h3, h4, h5, h6 {
   top: -75px;
 }
 
+@media (min-width: 1920px) {
+  .seo__header {
+    position: relative;
+    top: 0;
+  }
+}
+
 .seo__title {
   font-family: "circe", "Arial", sans-serif;
   font-size: 1.5rem;
@@ -1923,6 +1930,18 @@ h1, h2, h3, h4, h5, h6 {
   .seo__title {
     font-family: "circe", "Arial", sans-serif;
     font-size: 3.375rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .seo__wrapper {
+    padding: 25px 0 0 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .seo__wrapper {
+    padding: 40px 0 0 0;
   }
 }
 

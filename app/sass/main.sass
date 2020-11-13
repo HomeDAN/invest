@@ -1027,7 +1027,9 @@ h1,h2,h3,h4,h5,h6
   &__header
     position: relative
     top: -75px
-
+    @include media(1920px)
+      position: relative
+      top: 0
   &__title
     font-family: $f_circe
     font-size: px-to-rem(24px)
@@ -1046,6 +1048,11 @@ h1,h2,h3,h4,h5,h6
       font-family: $f_circe
       font-size: px-to-rem(54px)
 
+  &__wrapper
+    @include media(1024px)
+      padding: 25px 0 0 0
+    @include media(1920px)
+      padding: 40px 0 0 0
 
   &__block
     margin: 0 0 32px 0
